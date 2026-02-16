@@ -11,5 +11,4 @@ const client = createClient({
 await client.connect();
 
 client.subscribe('channel-01', (message, channel) => { console.log(`${channel}: ${message}`) });
-client.subscribe('channel-01', )
 setTimeout(() => { client.quit() }, 30000);
