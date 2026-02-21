@@ -6,8 +6,12 @@ const PORT = 40000;
 let storedJSON = null;
 
 let sendError = (response, code, message) => {
-    response.writeHead(code, {'content-type':'text/html'});
-    response.end(`<h2>${code}, ${message}</h2>`);
+    response.writeHead(code, {
+   'content-type':'application/json',
+   'Access-Control-Allow-Origin':'*'
+});
+   // response.end(`<h2>${code}, ${message}</h2>`);
+   response.end(JSON.stringify({error:code, message: message}));
 }
 
 let sendResult = (response, data) => {
@@ -90,8 +94,7 @@ const httpHandler = http.createServer((request, response) => {
                     return sendError(response,404,'JSON not found');
 
                 storedJSON = null;
-                response.writeHead(200);
-                return response.end();
+                return sendResult(response, {deleted:true});
 
             default:
                 return sendError(response,405,'Method not allowed');
