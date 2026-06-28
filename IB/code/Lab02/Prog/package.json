@@ -1,0 +1,17 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "pkg": {
+    "scripts": [
+      "utils.js"
+    ],
+    "assets": [
+      "input_lat.txt",
+      "input_cyr.txt"
+    ]
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

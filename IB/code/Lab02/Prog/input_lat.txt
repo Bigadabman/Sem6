@@ -1,0 +1,5 @@
+Inligting speel'n belangrike rol in die moderne wêreld.
+Dit word deur'n kommunikasiekanaal van'n bron na'n ontvanger oorgedra.
+Elke boodskap het'n sekere entropie.
+Hoe groter die onsekerheid, hoe meer inligting bevat die boodskap.
+Inligtingsteorie help om data te analiseer en te beskerm.

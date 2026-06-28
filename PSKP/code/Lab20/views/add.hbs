@@ -1,0 +1,13 @@
+{{> records active=false}}
+
+<h3>Добавить контакт</h3>
+
+<form method="POST" action="/Add">
+    <input type="text" name="name" placeholder="Имя" required>
+    <input type="text" name="number" placeholder="Номер" required>
+    <button type="submit">Добавить</button>
+</form>
+
+<br>
+
+{{{cancel}}}

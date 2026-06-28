@@ -38,7 +38,7 @@ let request = async (method) => {
   let response = await fetch(url, params);
 
   let text = await response.text();
-  console.log('debug: ', text);
+  console.log('debug: ', text); 
 
   let data = text ? JSON.parse(text) : {deleted:true};
 

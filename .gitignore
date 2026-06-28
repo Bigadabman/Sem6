@@ -1,8 +1,17 @@
 */lectures
 password.txt
+*.key
+*.crt
+*.crl
+*.csr
+*.srl
+
+
 node_modules/
 *.iso
 
+PIS/**/*.exe
+*.exe
 
 # production build
 build/

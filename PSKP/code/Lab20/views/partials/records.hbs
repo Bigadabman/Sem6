@@ -1,0 +1,23 @@
+<ul>
+
+    {{#each records}}
+
+        <li>
+
+            {{#if ../active}}
+
+                <a href="/Update?id={{@index}}">
+                    <button>{{name}} {{number}}</button>
+                </a>
+
+            {{else}}
+
+                <button disabled>{{name}} {{number}}</button>
+
+            {{/if}}
+
+        </li>
+
+    {{/each}}
+
+</ul>

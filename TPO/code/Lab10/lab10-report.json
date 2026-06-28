@@ -1,0 +1,617 @@
+{
+  "summary": {
+    "generatedAt": "2026-05-28T07:14:34.730Z",
+    "total": 22,
+    "passed": 20,
+    "failed": 0,
+    "knownDefects": 2
+  },
+  "apiMethods": [
+    {
+      "method": "POST",
+      "path": "/api/users/register",
+      "source": "backend/src/routes/user.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/login",
+      "source": "backend/src/routes/user.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/plans",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/plans/templates",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/plans",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/plans/generate",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/plans/:id",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/plans/:id",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/plans/:id/calendar.ics",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/plans/:id/google-calendar",
+      "source": "backend/src/routes/plan.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/workouts",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/workouts/:id",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/workouts/:id",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/workouts/exercise",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/workouts/exercise/:id",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/workouts/exercise/:id",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/workouts/:id",
+      "source": "backend/src/routes/workout.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/google",
+      "source": "backend/src/routes/auth.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/profile",
+      "source": "backend/src/routes/profile.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/profile",
+      "source": "backend/src/routes/profile.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/exercises",
+      "source": "backend/src/routes/exercise.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/exercises",
+      "source": "backend/src/routes/exercise.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/exercises/:id",
+      "source": "backend/src/routes/exercise.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/exercises/:id",
+      "source": "backend/src/routes/exercise.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/history",
+      "source": "backend/src/routes/history.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/history",
+      "source": "backend/src/routes/history.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/history/progress",
+      "source": "backend/src/routes/history.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/history/:id",
+      "source": "backend/src/routes/history.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/compare",
+      "source": "backend/src/routes/compare.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/compare/dictionaries",
+      "source": "backend/src/routes/compare.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/predictions",
+      "source": "backend/src/routes/prediction.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/predictions",
+      "source": "backend/src/routes/prediction.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/predictions/:id",
+      "source": "backend/src/routes/prediction.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/recommendations",
+      "source": "backend/src/routes/recommendation.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/stats",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/users",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/users/:id/role",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/users/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/standards",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/standards",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/standards/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/standards/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/world-records",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/world-records",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/world-records/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/world-records/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/athletes",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/athletes",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/athletes/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/athletes/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/athlete-results",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/athlete-results/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/athlete-results/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/templates",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/templates",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/templates/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/templates/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/templates/:id/workouts",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/template-workouts/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/template-workouts/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/template-workouts/:id/exercises",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/template-exercises/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/admin/template-exercises/:id",
+      "source": "backend/src/routes/admin.routes.js"
+    }
+  ],
+  "moduleMethodCaseMatrix": {
+    "method": "GET /api/admin/users",
+    "positive": [
+      {
+        "id": "POS-1",
+        "description": "Valid admin token is provided in Authorization header.",
+        "expectedStatus": 200
+      },
+      {
+        "id": "POS-2",
+        "description": "Valid admin token is provided with additional optional headers.",
+        "expectedStatus": 200
+      }
+    ],
+    "negative": [
+      {
+        "id": "NEG-1",
+        "description": "Authorization header is missing.",
+        "expectedStatus": 401
+      },
+      {
+        "id": "NEG-2",
+        "description": "Authorization token is invalid.",
+        "expectedStatus": 401
+      },
+      {
+        "id": "NEG-3",
+        "description": "Authenticated non-admin user requests admin endpoint.",
+        "expectedStatus": 403
+      }
+    ]
+  },
+  "notes": [
+    "The lab uses Jest and Supertest to exercise the Express API without starting an HTTP server.",
+    "Database models are mocked with deterministic in-memory data because the local .env points DB_HOST to the Docker service name db, which is not resolvable from the current host shell.",
+    "Pagination is not implemented by the current API. The pagination scenarios are included as known defects instead of changing the production API."
+  ],
+  "tests": [
+    {
+      "id": "M01",
+      "section": "module:get-methods",
+      "description": "List available API methods from backend source",
+      "status": "passed",
+      "durationMs": 6,
+      "details": {
+        "requirement": "Point 1",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "M02",
+      "section": "module:users-positive-negative",
+      "description": "GET /api/admin/users with valid admin token returns list",
+      "status": "passed",
+      "durationMs": 37,
+      "details": {
+        "expectedStatus": 200,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "M03",
+      "section": "module:users-positive-negative",
+      "description": "GET /api/admin/users with valid admin token and optional headers returns list",
+      "status": "passed",
+      "durationMs": 11,
+      "details": {
+        "expectedStatus": 200,
+        "headers": [
+          "Accept",
+          "X-Trace-Id"
+        ],
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "M04",
+      "section": "module:users-positive-negative",
+      "description": "GET /api/admin/users without token is rejected",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 401,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "M05",
+      "section": "module:users-positive-negative",
+      "description": "GET /api/admin/users with invalid token is rejected",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 401,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "M06",
+      "section": "module:users-positive-negative",
+      "description": "GET /api/admin/users with client token is forbidden",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 403,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "I01",
+      "section": "integration:plans-crud",
+      "description": "Create plan via POST /api/plans",
+      "status": "passed",
+      "durationMs": 25,
+      "details": {
+        "expectedStatus": 201,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "I02",
+      "section": "integration:plans-crud",
+      "description": "Read created plan via GET /api/plans",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 200,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "I03",
+      "section": "integration:plans-crud",
+      "description": "Update created plan via PATCH /api/plans/:id",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 200,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "I04",
+      "section": "integration:plans-crud",
+      "description": "Delete created plan via DELETE /api/plans/:id",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 204,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "E01",
+      "section": "errors",
+      "description": "POST /api/plans with empty body returns 400",
+      "status": "passed",
+      "durationMs": 5,
+      "details": {
+        "expectedStatus": 400,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "E02",
+      "section": "errors",
+      "description": "Request to non-existing endpoint returns 404",
+      "status": "passed",
+      "durationMs": 4,
+      "details": {
+        "expectedStatus": 404,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "E03",
+      "section": "errors",
+      "description": "POST /api/profile with invalid body returns 400",
+      "status": "passed",
+      "durationMs": 4,
+      "details": {
+        "expectedStatus": 400,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "A01",
+      "section": "access",
+      "description": "Protected endpoint without token is rejected",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 401,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "A02",
+      "section": "access",
+      "description": "Client token cannot access admin functions",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 403,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "A03",
+      "section": "access",
+      "description": "User cannot update another user's plan",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 404,
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "V01",
+      "section": "validation",
+      "description": "POST /api/plans with missing required field returns 400",
+      "status": "passed",
+      "durationMs": 4,
+      "details": {
+        "expectedStatus": 400,
+        "field": "name",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "V02",
+      "section": "validation",
+      "description": "POST /api/profile with number out of range returns 400",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 400,
+        "field": "weight",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "V03",
+      "section": "validation",
+      "description": "POST /api/profile with invalid field type returns 400",
+      "status": "passed",
+      "durationMs": 4,
+      "details": {
+        "expectedStatus": 400,
+        "field": "working_weights",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "V04",
+      "section": "validation",
+      "description": "POST /api/plans with very long name is accepted by current API",
+      "status": "passed",
+      "durationMs": 3,
+      "details": {
+        "expectedStatus": 201,
+        "note": "Current API does not enforce a maximum plan name length.",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "P01",
+      "section": "pagination",
+      "description": "GET /api/plans with page=1&limit=2 ignores pagination parameters",
+      "status": "known-defect",
+      "durationMs": 4,
+      "details": {
+        "expectedStatus": 200,
+        "defect": "API returns all plans instead of the requested page.",
+        "jestStatus": "passed"
+      }
+    },
+    {
+      "id": "P02",
+      "section": "pagination",
+      "description": "GET /api/plans with out-of-range page ignores pagination parameters",
+      "status": "known-defect",
+      "durationMs": 2,
+      "details": {
+        "expectedStatus": 200,
+        "defect": "API returns all plans instead of an empty page or range error.",
+        "jestStatus": "passed"
+      }
+    }
+  ]
+}

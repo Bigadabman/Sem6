@@ -1,0 +1,19 @@
+
+CREATE TABLESPACE lob_ts
+    DATAFILE '/opt/oracle/oradata/FREE/FREEPDB1/lob_ts01.dbf'
+    SIZE 50M
+    AUTOEXTEND ON NEXT 10M MAXSIZE 200M;
+
+CREATE USER lob_user IDENTIFIED BY 1111
+    DEFAULT TABLESPACE lob_ts
+    TEMPORARY TABLESPACE temp
+    QUOTA UNLIMITED ON lob_ts;
+
+GRANT CREATE SESSION TO lob_user;
+GRANT CREATE TABLE TO lob_user;
+
+
+CREATE OR REPLACE DIRECTORY lob_doc_dir AS '/opt/oracle/lob_files';
+
+
+GRANT READ ON DIRECTORY lob_doc_dir TO lob_user;

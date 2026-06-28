@@ -1,0 +1,6 @@
+openssl x509 -req -in RS-LAB22-MAA.csr \
+-CA CA-LAB22-KEO.crt -CAkey CA-LAB22-KEO.key \
+-CAcreateserial \
+-out RS-LAB22-MAA.crt \
+-days 365 -sha256 \
+-extfile ext.cnf

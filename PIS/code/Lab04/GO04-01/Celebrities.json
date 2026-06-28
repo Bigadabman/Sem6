@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "fullName": "Test Celebrity",
+    "nationality": "Test",
+    "reqPhotoPath": "test.jpg"
+  },
+  {
+    "id": 1,
+    "fullName": "Updated Celebrity",
+    "nationality": "Updated",
+    "reqPhotoPath": "updated.jpg"
+  }
+]

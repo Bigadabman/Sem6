@@ -1,0 +1,23 @@
+{{> records active=false}}
+
+<h3>Изменить контакт</h3>
+
+<form method="POST" action="/Update">
+    <input type="hidden" name="id" value="{{id}}">
+    <input id="nameField" type="text" name="name" placeholder="Имя" required>
+    <input type="text" name="number" placeholder="Номер" required>
+    <button type="submit">Изменить</button>
+</form>
+
+<br>
+<form method="POST" action="/Delete">
+
+<input type="hidden" name="id" value="{{id}}">
+
+<button id="deleteBtn" type="submit">Удалить</button>
+
+</form>
+
+<br>
+
+{{{cancel}}} 
